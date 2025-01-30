@@ -25,10 +25,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = 'django-insecure-bf^%u-385&a_0zt1tq=$jtp+4n^c10s$tasp6@z#6tm@kg%ijr'
-SECRET_KEY = "a24216bd493720d9e9b5de2840402e8f6e7b9ea8c89b83faadb5f00d7b60af8226c499"
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-cutbert1-djangoblog-25bciaqkafl.ws.codeinstitute-ide.net', '.herokuapp.com']
 
