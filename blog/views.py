@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.views import generic
 from django.contrib import messages
 from .models import Post
-from .form import CommentForm
+from .forms import CommentForm
 
 # Create your views here.
 
@@ -42,6 +42,8 @@ def post_detail(request, slug):
                 request, messages.SUCCESS,
                 'Comment submitted and awaiting approval'
             )
+
+    comment_form = CommentForm()
 
     return render(
         request,
