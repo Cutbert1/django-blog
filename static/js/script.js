@@ -1,1 +1,0 @@
-console.log("I am working on Django blog project 'I think I can blog'")
