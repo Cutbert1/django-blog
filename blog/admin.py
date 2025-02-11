@@ -3,10 +3,10 @@ from .models import Post, Comment
 from django_summernote.admin import SummernoteModelAdmin
 
 
-@admin.register(Post) 
+@admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
 
-    list_display = ('title', 'slug', 'status','created_on')
+    list_display = ('title', 'slug', 'status', 'created_on')
     search_fields = ['title', 'content']
     list_filter = ('status', 'created_on')
     prepopulated_fields = {'slug': ('title',)}
@@ -15,3 +15,4 @@ class PostAdmin(SummernoteModelAdmin):
 
 # Register your models here.
 admin.site.register(Comment)
+
