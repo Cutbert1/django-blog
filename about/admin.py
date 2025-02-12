@@ -9,7 +9,7 @@ class AboutAdmin(SummernoteModelAdmin):
     Register admin panel
     **Context**
     ``django-summernote``
-        format admin panel content field   
+        format admin panel content field
     """
     summernote_fields = ('content',)
 

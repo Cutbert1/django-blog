@@ -9,7 +9,7 @@ class PostAdmin(SummernoteModelAdmin):
     Register admin panel
     **Context**
     ``django-summernote``
-        format admin panel content field   
+        format admin panel content field
     """
 
     list_display = ('title', 'slug', 'status', 'created_on')
